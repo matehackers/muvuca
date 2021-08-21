@@ -50,9 +50,27 @@ html {
   max-width: 100%;
 }
 
+iframe {
+  width:100%;
+  min-height:900px;
+  border:none;
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+
+@media (max-width: 760px) {
+  .hero-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media (min-width: 1024px) {
   .hero-container {
-    height: 125vh;
+    display: flex;
+    width: 100%;
+    height: auto;
   }
   .hero-container h1 {
     font-size: 3rem;
